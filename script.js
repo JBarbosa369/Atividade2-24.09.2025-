@@ -1,7 +1,7 @@
-let Pessoas = {
-    Nome: prompt("Digite seu nome:"),
-    Idade: Number (prompt("Digite sua idade:"))
-}
+// let Pessoas = {
+//     Nome: prompt("Digite seu nome:"),
+//     Idade: Number (prompt("Digite sua idade:"))
+// }
 
 const VerificarIdade = (Nome,Idade) => {
     if(Idade >= 0 && Idade <= 2){
@@ -24,4 +24,16 @@ const VerificarIdade = (Nome,Idade) => {
         alert('Olá ${Nome},Você é um idoso')
     }
 }
-VerificarIdade(Pessoas.Nome, Pessoas.Idade)
+// VerificarIdade(Pessoas.Nome, Pessoas.Idade)
+
+
+// par ou ímpar
+function ParOuimpar(numero){
+    if(numero % 2 == 0){
+        return 'par'
+    }
+    else{
+        return 'ímpar'
+    }
+}
+alert(ParOuimpar(2))
