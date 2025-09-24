@@ -1,28 +1,27 @@
-function faixaEtaria(nome, idade) {
-  if (idade <= 2) {
-    return `${nome} é bebê`;
-  } else {
-    if (idade <= 12) {
-      return `${nome} é criança`;
-    } else {
-      if (idade <= 17) {
-        return `${nome} é adolescente`;
-      } else {
-        if (idade <= 29) {
-          return `${nome} é jovem adulto`;
-        } else {
-          if (idade <= 59) {
-            return `${nome} é adulto`;
-          } else {
-            return `${nome} é idoso`;
-          }
-        }
-      }
-    }
-  }
+let Pessoas = {
+    Nome: prompt("Digite seu nome:"),
+    Idade: Number (prompt("Digite sua idade:"))
 }
-console.log(faixaEtaria("Ana", 1));   
-console.log(faixaEtaria("Bruno", 14)); 
-console.log(faixaEtaria("Clara", 45)); 
-console.log(faixaEtaria("David", 70)); 
 
+const VerificarIdade = (Nome,Idade) => {
+    if(Idade >= 0 && Idade <= 2){
+        alert('Olá ${Nome},Você é um bebê')
+    }
+    else if(Idade >= 3 && Idade <= 12){
+        alert('Olá ${Nome},Você é uma criança')
+    }
+
+    else if(Idade >= 13 && Idade <= 17){
+        alert('Olá ${Nome},Você é um adolescente')
+    }
+    else if(Idade >= 30 && Idade <= 29){
+        alert('Olá${Nome},Você é um jovem adulto ')
+    }
+    else if(Idade >= 30 && Idade <= 59){
+        alert('Olá ${Nome},Você é um adulto')
+    }
+    else if (Idade >= 60){
+        alert('Olá ${Nome},Você é um idoso')
+    }
+}
+VerificarIdade(Pessoas.Nome, Pessoas.Idade)
