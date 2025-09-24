@@ -37,3 +37,9 @@ function ParOuimpar(numero){
     }
 }
 alert(ParOuimpar(2))
+
+
+// Faça um contador que aumenta de 0 a 10 usando for
+for(let I = 0; I <= 10; I++){
+    console.log(I)
+}
