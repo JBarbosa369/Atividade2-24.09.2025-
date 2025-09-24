@@ -43,3 +43,10 @@ alert(ParOuimpar(2))
 for(let I = 0; I <= 10; I++){
     console.log(I)
 }
+
+// faca um contador que aumenta de 0 a 10 usando while
+let Contador = 0
+while(Contador <= 10){
+    console.log(Contador)
+    Contador++
+}
